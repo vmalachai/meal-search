@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/other">Other</RouterLink>
+   <RouterLink :to="{name: 'Home'}">Home</RouterLink>
+    <RouterLink :to="{name: 'MealsByName'}">Meals By Name</RouterLink>
+    <RouterLink :to="{name: 'MealsByLetter'}">Meals By Letter</RouterLink>
+    <RouterLink :to="{name: 'MealsByIngredients'}">Meals By Ingredients</RouterLink>
   </nav>
 </template>
 
@@ -11,6 +13,6 @@ nav {
 
   & .router-link-active {
     @apply underline underline-offset-4;
-  }
+  }  
 }
 </style>
